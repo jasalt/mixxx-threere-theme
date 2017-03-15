@@ -72,14 +72,14 @@
                 <SetVariable name="DeckBackgroundColor">#333333</SetVariable>
                 <SetVariable name="control_show_spinny">[Spinny<Variable name="i"/>],show_spinny</SetVariable>
               </Template>
-              <Template src="skin:deck_visual_row.xml">
-                <SetVariable name="i">4</SetVariable>
-                <SetVariable name="group">[Channel<Variable name="i"/>]</SetVariable>
-                <!-- Lime -->
-                <SetVariable name="DeckSignalColor">#AABD00</SetVariable>
-                <SetVariable name="DeckBackgroundColor">#333333</SetVariable>
-                <SetVariable name="control_show_spinny">[Spinny<Variable name="i"/>],show_spinny</SetVariable>
-              </Template>
+              <!-- <Template src="skin:deck_visual_row.xml"> -->
+              <!--   <SetVariable name="i">4</SetVariable> -->
+              <!--   <SetVariable name="group">[Channel<Variable name="i"/>]</SetVariable> -->
+              <!--   <!-\- Lime -\-> -->
+              <!--   <SetVariable name="DeckSignalColor">#AABD00</SetVariable> -->
+              <!--   <SetVariable name="DeckBackgroundColor">#333333</SetVariable> -->
+              <!--   <SetVariable name="control_show_spinny">[Spinny<Variable name="i"/>],show_spinny</SetVariable> -->
+              <!-- </Template> -->
             </Children>
               <Connection>
               <ConfigKey>[Master],show_4decks</ConfigKey>
