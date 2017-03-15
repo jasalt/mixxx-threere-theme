@@ -9,7 +9,8 @@
   <WidgetGroup>
     <ObjectName>VisualRow</ObjectName>
     <Layout>horizontal</Layout>
-    <SizePolicy>me,max</SizePolicy>
+    <!-- <SizePolicy>me,max</SizePolicy> -->
+    <SizePolicy>me,me</SizePolicy>
     <!-- Because the spinny hides itself and throws off the size
          calculation we set our minimum size to the spinny size. -->
     <MinimumSize>-1,101</MinimumSize>

@@ -13,7 +13,8 @@
         <WidgetGroup>
         <ObjectName>StackedWaveformsContainer</ObjectName> 
         <Layout>vertical</Layout>
-        <SizePolicy>me,min</SizePolicy>
+        <!-- <SizePolicy>me,min</SizePolicy> -->
+        <SizePolicy>me,me</SizePolicy>
         <Children>
           <!-- In 2-deck mode, we show 2 waveforms -->
           <WidgetGroup>
