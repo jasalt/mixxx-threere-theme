@@ -52,12 +52,6 @@
             <SetVariable name="left_connection_control"><Variable name="group"/>,fwd</SetVariable>
             <SetVariable name="right_connection_control"><Variable name="group"/>,end</SetVariable>
           </Template>
-        </Children>
-      </WidgetGroup>
-
-      <WidgetGroup>
-        <Layout>horizontal</Layout>
-        <Children>
           <Template src="skin:beatjump.xml"/>
         </Children>
       </WidgetGroup>

@@ -53,12 +53,7 @@
             <SetVariable name="left_connection_control"><Variable name="group"/>,reloop_exit</SetVariable>
             <SetVariable name="display_connection_control"><Variable name="group"/>,loop_enabled</SetVariable>
           </Template>
-        </Children>
-      </WidgetGroup>
-
-      <WidgetGroup>
-        <Layout>horizontal</Layout>
-        <Children>
+          
           <Template src="skin:loopmove.xml"/>
         </Children>
       </WidgetGroup>
