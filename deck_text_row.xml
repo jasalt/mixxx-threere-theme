@@ -111,7 +111,39 @@
                     </Connection>
                   </Label>
 
-                  <WidgetGroup>
+                  
+
+                <WidgetGroup>
+                    <ObjectName>StarratingGutter</ObjectName>
+                    <Layout>horizontal</Layout>
+                    <SizePolicy>min,min</SizePolicy>
+                    <Children>
+                      <StarRating>
+                        <TooltipId>starrating</TooltipId>
+                        <Group><Variable name="group"/></Group>
+                      </StarRating>
+                    </Children>
+                    <Connection>
+                      <ConfigKey persist="true">[Deere],show_starrating</ConfigKey>
+                      <BindProperty>visible</BindProperty>
+                    </Connection>
+                </WidgetGroup>
+                
+                <WidgetGroup>
+                    <ObjectName>PositionGutter</ObjectName>
+                    <Layout>horizontal</Layout>
+                    <SizePolicy>min,max</SizePolicy>
+                    <MinimumSize>70,20</MinimumSize>
+                    <MaximumSize>100,30</MaximumSize>
+                    <Children>
+                      <NumberPos>
+                        <TooltipId>track_time</TooltipId>
+                        <Group><Variable name="group"/></Group>
+                      </NumberPos>
+                    </Children>
+                </WidgetGroup>
+
+<WidgetGroup>
                     <ObjectName>BPMGutter</ObjectName>
                     <Layout>horizontal</Layout>
                     <SizePolicy>min,max</SizePolicy>
@@ -459,35 +491,6 @@
                     </Children>
                 </WidgetGroup>
 
-                <WidgetGroup>
-                    <ObjectName>StarratingGutter</ObjectName>
-                    <Layout>horizontal</Layout>
-                    <SizePolicy>min,min</SizePolicy>
-                    <Children>
-                      <StarRating>
-                        <TooltipId>starrating</TooltipId>
-                        <Group><Variable name="group"/></Group>
-                      </StarRating>
-                    </Children>
-                    <Connection>
-                      <ConfigKey persist="true">[Deere],show_starrating</ConfigKey>
-                      <BindProperty>visible</BindProperty>
-                    </Connection>
-                </WidgetGroup>
-                
-                <WidgetGroup>
-                    <ObjectName>PositionGutter</ObjectName>
-                    <Layout>horizontal</Layout>
-                    <SizePolicy>min,max</SizePolicy>
-                    <MinimumSize>70,20</MinimumSize>
-                    <MaximumSize>100,30</MaximumSize>
-                    <Children>
-                      <NumberPos>
-                        <TooltipId>track_time</TooltipId>
-                        <Group><Variable name="group"/></Group>
-                      </NumberPos>
-                    </Children>
-                </WidgetGroup>
                 
                 </Children>
               </WidgetGroup>
