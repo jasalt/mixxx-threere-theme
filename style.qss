@@ -640,7 +640,7 @@ WWidget, QLabel {
 
 /* Start spacing for toolbar */
 #ToolBar {
-  padding: 0px 4px 0px 4px;
+  padding: 0px 1px 0px 1px;
   qproperty-layoutSpacing: 5;
   background-color: #111111;
 }
@@ -1320,8 +1320,8 @@ QToolTip {
   margin: 0px;
   qproperty-layoutSpacing: 0;
   qproperty-layoutContentsMargins: rect(10 2 10 2);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 WWidget {
