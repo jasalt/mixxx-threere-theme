@@ -9,14 +9,8 @@
     <Layout>vertical</Layout>
     <SizePolicy>me,min</SizePolicy>
     <Children>
-      <Template src="skin:spacer.xml"/>
-      <Template src="skin:deck_left.xml">
-        <SetVariable name="i">1</SetVariable>
-        <!-- Traditional Blue -->
-        <SetVariable name="DeckSignalColor">#007BCD</SetVariable>
-        <SetVariable name="DeckBackgroundColor">#333333</SetVariable>
-      </Template>
 
+        <!-- Deck 3 -->
       <WidgetGroup>
         <Layout>horizontal</Layout>
         <Children>
@@ -32,6 +26,23 @@
           <BindProperty>visible</BindProperty>
         </Connection>
       </WidgetGroup>
+        
+      <Template src="skin:spacer.xml"/>
+      <Template src="skin:deck_left.xml">
+        <SetVariable name="i">1</SetVariable>
+        <!-- Traditional Blue -->
+        <SetVariable name="DeckSignalColor">#007BCD</SetVariable>
+        <SetVariable name="DeckBackgroundColor">#333333</SetVariable>
+      </Template>
+
+      <Template src="skin:spacer.xml"/>
+      <Template src="skin:deck_left.xml">
+        <SetVariable name="i">2</SetVariable>
+        <!-- Traditional Orange -->
+        <SetVariable name="DeckSignalColor">#E67A00</SetVariable>
+        <SetVariable name="DeckBackgroundColor">#333333</SetVariable>
+      </Template>      
+
       <Template src="skin:spacer.xml"/>
     </Children>
   </WidgetGroup>
