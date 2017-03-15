@@ -675,7 +675,7 @@ WWidget, QLabel {
 
 #ArtistGutter, #TitleGutter {
   qproperty-layoutAlignment: 'AlignLeft | AlignTop';
-  padding: 2px;
+  padding: 1px;
 }
 
 #BPMGutter, #PositionGutter {

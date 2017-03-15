@@ -13,9 +13,9 @@
       <WidgetGroup>
         <Layout>horizontal</Layout>
         <Children>
-          <Template src="skin:left_gutter.xml"/>
+          <Template src="skin:left_gutter.xml"/> <!-- with deck controls -->
           <Template src="skin:mixer.xml"/>
-          <Template src="skin:right_gutter.xml"/>
+          <Template src="skin:right_gutter.xml"/> <!-- with waveforms -->
         </Children>
       </WidgetGroup>
         
