@@ -8,7 +8,7 @@
     <language>en</language>
     <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
     <attributes>
-      <attribute config_key="[Master],num_decks">4</attribute>
+      <attribute config_key="[Master],num_decks">3</attribute>
       <attribute config_key="[Master],num_samplers">16</attribute>
       <attribute config_key="[Master],num_preview_decks">1</attribute>
       <!--Optionally, make elements visible on skin load-->
@@ -20,6 +20,12 @@
       <attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
       <attribute persist="true" config_key="[Vinylcontrol],show_vinylcontrol">0</attribute>
       <attribute persist="true" config_key="[PreviewDeck],show_previewdeck">0</attribute>
+
+      <!-- TODO not enabled? -->
+      <attribute persist="true" config_key="[Master],show_4decks">1</attribute>
+      <attribute persist="true" config_key="[Deere],show_stacked_waveforms">1</attribute>
+      <attribute persist="true" config_key="[Master],hide_mixer">1</attribute>
+      
       <attribute config_key="[Library],show_library">1</attribute>
       <attribute persist="true" config_key="[Library],show_coverart">0</attribute>
     </attributes>
