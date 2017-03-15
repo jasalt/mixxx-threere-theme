@@ -716,7 +716,7 @@ WWidget, QLabel {
 
 #DeckTextRow #ArtistGutter WLabel, #DeckTextRow #BPMGutter WLabel, #DeckTextRow #PositionGutter WLabel {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
   text-transform: none;
 }
 
@@ -732,7 +732,7 @@ WWidget, QLabel {
 
 #DeckTextRow #TitleGutter WLabel, #EffectRackExpanded #EffectUnitNameContainer WLabel {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
   text-transform: none;
   text-align: left;
 }

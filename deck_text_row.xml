@@ -46,14 +46,45 @@
                  labels in this row -->
             <SizePolicy>i,max</SizePolicy>
             <Children>
+
+                
               <WidgetGroup>
                 <ObjectName>TitleGutter</ObjectName>
                 <Layout>horizontal</Layout>
                 <SizePolicy>min,max</SizePolicy>
                 <Children>
 
+
+                    
                   <!-- We allow to hide track/artist info (aka AM-Mode) in the skin settings,
                        display just a label with asterixes instead. -->
+
+                                    <TrackProperty>
+                    <TooltipId>track_artist</TooltipId>
+                    <Property>artist</Property>
+                    <SizePolicy>me,min</SizePolicy>
+                    <Elide>right</Elide>
+                    <Group><Variable name="group"/></Group>
+                    <Connection>
+                      <ConfigKey>[Deere],show_no_track_info</ConfigKey>
+                      <BindProperty>visible</BindProperty>
+                      <Transform>
+                        <Not/>
+                      </Transform>
+                    </Connection>
+                  </TrackProperty>
+
+                  <Label>
+                    <TooltipId>track_artist</TooltipId>
+                    <Size>me,min</Size>
+                    <ObjectName>HiddenTrackArtistInfo</ObjectName>
+                    <Text>***</Text>
+                    <Connection>
+                      <ConfigKey>[Deere],show_no_track_info</ConfigKey>
+                      <BindProperty>visible</BindProperty>
+                    </Connection>
+                  </Label>
+                  
                   <TrackProperty>
                     <TooltipId>track_title</TooltipId>
                     <SizePolicy>me,min</SizePolicy>
@@ -426,54 +457,9 @@
                         </Children>
                       </WidgetStack>
                     </Children>
-                  </WidgetGroup>
-                </Children>
-              </WidgetGroup>
-            </Children>
-          </WidgetGroup>
+                </WidgetGroup>
 
-          <WidgetGroup>
-            <ObjectName>LowerTextRow</ObjectName>
-            <Layout>horizontal</Layout>
-            <!-- When TextRow is laid out, we need to ignore our children. Otherwise
-                 decks might end up with different widths based on the size of the
-                 labels in this row -->
-            <SizePolicy>i,max</SizePolicy>
-            <Children>
-              <WidgetGroup>
-                <ObjectName>ArtistGutter</ObjectName>
-                <Layout>horizontal</Layout>
-                <SizePolicy>me,max</SizePolicy>
-                <Children>
-                  <!-- We allow to hide track/artist info (aka AM-Mode) in the skin settings,
-                       display just a label with asterixes instead. -->
-                  <TrackProperty>
-                    <TooltipId>track_artist</TooltipId>
-                    <Property>artist</Property>
-                    <SizePolicy>me,min</SizePolicy>
-                    <Elide>right</Elide>
-                    <Group><Variable name="group"/></Group>
-                    <Connection>
-                      <ConfigKey>[Deere],show_no_track_info</ConfigKey>
-                      <BindProperty>visible</BindProperty>
-                      <Transform>
-                        <Not/>
-                      </Transform>
-                    </Connection>
-                  </TrackProperty>
-
-                  <Label>
-                    <TooltipId>track_artist</TooltipId>
-                    <Size>me,min</Size>
-                    <ObjectName>HiddenTrackArtistInfo</ObjectName>
-                    <Text>***</Text>
-                    <Connection>
-                      <ConfigKey>[Deere],show_no_track_info</ConfigKey>
-                      <BindProperty>visible</BindProperty>
-                    </Connection>
-                  </Label>
-
-                  <WidgetGroup>
+                <WidgetGroup>
                     <ObjectName>StarratingGutter</ObjectName>
                     <Layout>horizontal</Layout>
                     <SizePolicy>min,min</SizePolicy>
@@ -487,9 +473,9 @@
                       <ConfigKey persist="true">[Deere],show_starrating</ConfigKey>
                       <BindProperty>visible</BindProperty>
                     </Connection>
-                  </WidgetGroup>
-
-                  <WidgetGroup>
+                </WidgetGroup>
+                
+                <WidgetGroup>
                     <ObjectName>PositionGutter</ObjectName>
                     <Layout>horizontal</Layout>
                     <SizePolicy>min,max</SizePolicy>
@@ -501,7 +487,8 @@
                         <Group><Variable name="group"/></Group>
                       </NumberPos>
                     </Children>
-                  </WidgetGroup>
+                </WidgetGroup>
+                
                 </Children>
               </WidgetGroup>
             </Children>
