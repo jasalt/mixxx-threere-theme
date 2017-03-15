@@ -55,15 +55,15 @@
         <ObjectName>OptionGrid</ObjectName>
         <Layout>vertical</Layout>
         <SizePolicy>min,me</SizePolicy>
-        <MinimumSize>60,40</MinimumSize>
-        <MaximumSize>90,60</MaximumSize>
+        <MinimumSize>100,40</MinimumSize>
+        <MaximumSize>150,60</MaximumSize>
         <Children>
           <WidgetGroup>
             <ObjectName>OptionGridRow1</ObjectName>
             <Layout>horizontal</Layout>
             <SizePolicy>p,me</SizePolicy>
-            <MinimumSize>60,20</MinimumSize>
-            <MaximumSize>90,30</MaximumSize>
+            <MinimumSize>100,20</MinimumSize>
+            <MaximumSize>150,30</MaximumSize>
             <Children>
               <Template src="skin:left_2state_button.xml">
                 <SetVariable name="TooltipId">show_spinny</SetVariable>
@@ -106,6 +106,30 @@
                 <SetVariable name="state_0_unpressed">icon/ic_eject_48px.svg</SetVariable>
                 <SetVariable name="left_connection_control"><Variable name="group"/>,eject</SetVariable>
               </Template>
+
+              <Template src="skin:left_2state_button.xml">
+        <SetVariable name="TooltipId">cue_default_cue_gotoandstop</SetVariable>
+        <SetVariable name="ObjectName">DeckCue</SetVariable>
+        
+        <!-- <SetVariable name="MinimumSize"><Variable name="HorizontalStretchButtonMinimumSize"/></SetVariable> -->
+        <!-- <SetVariable name="MaximumSize"><Variable name="HorizontalStretchButtonMaximumSize"/></SetVariable> -->
+        <!-- <SetVariable name="SizePolicy"><Variable name="HorizontalStretchButtonSizePolicy"/></SetVariable> -->
+        <SetVariable name="MinimumSize"><Variable name="WideButtonMinimumSize"/></SetVariable>
+        <SetVariable name="MaximumSize"><Variable name="WideButtonMaximumSize"/></SetVariable>
+        <SetVariable name="SizePolicy"><Variable name="SquareButtonSizePolicy"/></SetVariable>
+        
+        <SetVariable name="LeftClickIsPushButton">true</SetVariable>
+        <SetVariable name="RightClickIsPushButton">true</SetVariable>
+        <SetVariable name="state_0_text">CUE</SetVariable>
+        <SetVariable name="state_0_pressed"></SetVariable>
+        <SetVariable name="state_0_unpressed"></SetVariable>
+        <SetVariable name="state_1_text">CUE</SetVariable>
+        <SetVariable name="state_1_pressed"></SetVariable>
+        <SetVariable name="state_1_unpressed"></SetVariable>
+        <SetVariable name="left_connection_control"><Variable name="group"/>,cue_default</SetVariable>
+        <SetVariable name="right_connection_control"><Variable name="group"/>,cue_gotoandstop</SetVariable>
+        <SetVariable name="display_connection_control"><Variable name="group"/>,cue_indicator</SetVariable>
+                </Template>
             </Children>
           </WidgetGroup>
 
@@ -113,8 +137,8 @@
             <ObjectName>OptionGridRow2</ObjectName>
             <Layout>horizontal</Layout>
             <SizePolicy>p,me</SizePolicy>
-            <MinimumSize>60,20</MinimumSize>
-            <MaximumSize>90,30</MaximumSize>
+            <MinimumSize>100,20</MinimumSize>
+            <MaximumSize>150,30</MaximumSize>
             <Children>
               <Template src="skin:left_2state_button.xml">
                 <SetVariable name="TooltipId">quantize</SetVariable>
@@ -160,6 +184,32 @@
                 <SetVariable name="state_1_unpressed">icon/ic_slip_48px.svg</SetVariable>
                 <SetVariable name="left_connection_control"><Variable name="group"/>,slip_enabled</SetVariable>
               </Template>
+              
+              <!-- <Template src="skin:left_right_display_2state_button.xml"> -->
+              
+                
+<Template src="skin:left_right_display_2state_button.xml">
+        <SetVariable name="TooltipId">play_cue_set</SetVariable>
+        <SetVariable name="ObjectName">PlayToggle</SetVariable>
+        <!-- <SetVariable name="MinimumSize"><Variable name="HorizontalStretchButtonMinimumSize"/></SetVariable> -->
+        <!-- <SetVariable name="MaximumSize"><Variable name="HorizontalStretchButtonMaximumSize"/></SetVariable> -->
+        <!-- <SetVariable name="SizePolicy"><Variable name="HorizontalStretchButtonSizePolicy"/></SetVariable> -->
+        <SetVariable name="MinimumSize"><Variable name="WideButtonMinimumSize"/></SetVariable>
+        <SetVariable name="MaximumSize"><Variable name="WideButtonMaximumSize"/></SetVariable>
+        <SetVariable name="SizePolicy"><Variable name="SquareButtonSizePolicy"/></SetVariable>
+        <SetVariable name="LeftClickIsPushButton">false</SetVariable>
+        <SetVariable name="RightClickIsPushButton">false</SetVariable>
+        <SetVariable name="state_0_text"></SetVariable>
+        <SetVariable name="state_0_pressed">icon/ic_play_48px.svg</SetVariable>
+        <SetVariable name="state_0_unpressed">icon/ic_play_48px.svg</SetVariable>
+        <SetVariable name="state_1_text"></SetVariable>
+        <SetVariable name="state_1_pressed">icon/ic_play_48px.svg</SetVariable>
+        <SetVariable name="state_1_unpressed">icon/ic_play_48px.svg</SetVariable>
+        <SetVariable name="left_connection_control"><Variable name="group"/>,play</SetVariable>
+        <SetVariable name="right_connection_control"><Variable name="group"/>,cue_set</SetVariable>
+        <SetVariable name="display_connection_control"><Variable name="group"/>,play_indicator</SetVariable>
+      </Template>                
+              
             </Children>
           </WidgetGroup>
         </Children>
