@@ -9,8 +9,9 @@ Skin with three decks designed to be used with mixer and deck controller (eg. Ak
 As told in the [Mixxx documentation](https://www.mixxx.org/wiki/doku.php/creating_skins#skin_faq).
 
 1. Close Mixxx.
-2. Download & unzip "s.zip" and copy the whole unzipped folder "Threere" to the corresponding path:
+2. Download & unzip "s.zip" and copy/symlink the whole unzipped folder "Threere" to the corresponding path:
   * Linux: `/usr/share/mixxx/skins/`
+  ** sudo ln -s `pwd`/Threere /usr/share/mixxx/skins/
   * Windows: `C:\Program Files\Mixxx\skins`
   * MacOS `/Applications/Mixxx.app/Contents/Resources/skins` (or right click Mixxx.app and select "Show Package Contents" to show the path `Contents/Resources/skins`. 
 3. Start Mixxx , goto "Preferences-->Interface" and select "Skin-->Threere"
